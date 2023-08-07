@@ -1,0 +1,54 @@
+.twitter-box {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.twitter-box__avatar {
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.twitter-box__username {
+  display: flex;
+  flex-direction: column;
+}
+
+.twitter-box__username.info {
+  color: grey;
+}
+
+.twitter-box-followCard-button {
+  background-color: #242424;
+  border: 2px solid #fff;
+}
+
+.twitter-box-followCard-button:hover {
+  background-color: #494949;
+}
+
+.twitter-box-followCard-button.is-following {
+  background-color: #242424;
+  border: 2px solid #fff;
+}
+
+.twitter-box-followCard-button.is-following:hover {
+  color: red;
+  background-color: rgb(86, 3, 3);
+}
+
+.twitter-box-followCard-unfollow {
+  display: none;
+}
+
+.twitter-box-followCard-button.is-following:hover
+  .twitter-box-followCard-unfollow {
+  display: block;
+}
+
+.twitter-box-followCard-button.is-following:hover .twitter-box-followCard-text {
+  display: none;
+}
